@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+	<title>Gallery Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	   flag=1;
+	    $("#nexg").click(function(){
+	       if(flag==0)
+	        {
+	            $("#side1g").css("z-index","999");
+	            $("#side2g").css("z-index","9");
+	            $("#side3g").css("z-index","9");
+	            $("#side1g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side2g").css("transform","translateX(-100px) scale(1)");
+	            $("#side3g").css("transform","translateX(100px)");
+	            flag=1;
+	        }
+	        else if(flag==1)
+	        {
+	            $("#side3g").css("z-index","999");
+	            $("#side2g").css("z-index","9");
+	            $("#side1g").css("z-index","9");
+	            $("#side3g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side1g").css("transform","translateX(-100px) scale(1)");
+	            $("#side2g").css("transform","translateX(100px)");
+	            flag=2;
+	        }
+	        else if(flag==2)
+	        {
+	            $("#side2g").css("z-index","999");
+	            $("#side3g").css("z-index","9");
+	            $("#side1g").css("z-index","9");
+	            $("#side2g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side3g").css("transform","translateX(-100px) scale(1)");
+	            $("#side1g").css("transform","translateX(100px)");
+	            flag=0;
+	        }
+	    });
+	    $("#preg").click(function(){
+	       if(flag==0)
+	        {
+	            $("#side3g").css("z-index","999");
+	            $("#side2g").css("z-index","9");
+	            $("#side1g").css("z-index","9");
+	            $("#side3g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side1g").css("transform","translateX(-100px) scale(1)");
+	            $("#side2g").css("transform","translateX(100px)");
+	            flag=2;
+	        }
+	        else if(flag==1)
+	        {
+	            $("#side2g").css("z-index","999");
+	            $("#side3g").css("z-index","9");
+	            $("#side1g").css("z-index","9");
+	            $("#side2g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side3g").css("transform","translateX(-100px) scale(1)");
+	            $("#side1g").css("transform","translateX(100px)");
+	            flag=0;
+	        }
+	        else if(flag==2)
+	        {
+	            $("#side1g").css("z-index","999");
+	            $("#side2g").css("z-index","9");
+	            $("#side3g").css("z-index","9");
+	            $("#side1g").css("transform","translateX(0px) scale(1.5)");
+	            $("#side2g").css("transform","translateX(-100px) scale(1)");
+	            $("#side3g").css("transform","translateX(100px)");
+	            flag=1;
+	        }
+	    });
+	});
+</script>
+</head>
+<body>
+	<section id="welcome">
+		<ul>
+			<li>h</li>
+			<li>i</li>
+			<li>-</li>
+			<li>t</li>
+			<li>e</li>
+			<li>c</li>
+			<li>h</li>
+			<li></li>
+			<li>d</li>
+			<li>i</li>
+			<li>g</li>
+			<li>i</li>
+		</ul>
+	</section>
+	<nav class="navigation">
+		<div id="main">
+				<div id="box">
+						<div id="side1">WE</div>
+		        <div id="side2">DESIGN</div>
+						<div id="side3">CREATE</div>
+						<div id="side4">INNOVATE</div>
+
+	</div>
+		<div id="right">
+			<ul>
+				<li><a href="#video_container" id="link1">home</a></li>
+				<li><a href="#about" id="link2">about</a></li>
+				<li><a href="#service" id="link3">services</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">tutorial</a></li>
+				<li><a href="#">cart</a></li>
+				<li><a href="#contact" id="link4">contact</a></li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<section id="video_container" style="height: 550px;">
+		<video preload="auto" autoplay="autoplay" loop src="After Effect - Simple Motion Graphic (1).mp4" type="video/mp4" muted></video>
+	<div class="boxdp">
+	<h1>dp</h1>
+	<p>printing solutions.</p>
+	</div>
+	<div id="MenuIcon">
+	 <div id="MenuLine"></div>
+</div>
+
+<div id="MainMenu">
+	 <div id="logo">
+			 <img src="lion-1574448_960_720.png" height="200px" width="175px"/>
+	 </div>
+	 <ul>
+			 <li>HOME<div class="line"></div></li>
+			 <li>LETTER PAD<div class="line"></div></li>
+			 <li>CARDS<div class="line"></div></li>
+			 <li>BANNERS<div class="line"></div></li>
+	 </ul>
+	 <div id="close">
+			 <img src="Close.png" height="30px" width="30px"/>
+	 </div>
+</div>
+	</section>
+<section id="psletter">
+	<div id="preg">
+	            PREVIOUS
+	        </div>
+	        <div id="maing">
+	            <div id="side1g">
+	                <img src="letterhead.png" height="100%" width="100%"/>
+	            </div>
+	            <div id="side2g">
+	                <img src="microsoft-word-templates-free-download-color-letterhead-template.png" height="100%" width="100%"/>
+	            </div>
+	            <div id="side3g">
+	                <img src="9f62c000731d7f5e79d73c06ae813f87.gif" height="100%" width="100%"/>
+	            </div>
+	        </div>
+	        <div id="nexg">
+	            NEXT
+	        </div>
+					<div id="buttonvw"><a href="#">VIEW MORE>></a></div>
+</section>
+<section id="gcard">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<div id="buttonvw" style="left: 90%;"><a href="#">VIEW MORE>></a></div>
+</section>
+<section id="bannerg">
+<div class="slideshow-container">
+
+<div class="mySlidesg fade">
+  <img src="fer.jpg" style="width:100%">
+</div>
+<div class="mySlidesg fade">
+  <img src="audi.jpg" style="width:100%">
+</div>
+<div class="mySlidesg fade">
+  <img src="lambo.jpg" style="width:100%">
+</div>
+<a class="prevgg" onclick="plusSlides(-1)">&#10094;</a>
+<a class="nextgg" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div id="buttonvw"><a href="#">VIEW MORE>></a></div>
+</section>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesg");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+<footer>
+	<p>© 2017 KPMS CINEMAS online ticket booking site.</p>
+	<footer>
+
+
+
+
+ <script>
+ $(document).ready(function(){
+   $("#MenuIcon").click(function(){
+        $("#MainMenu").css("left","0px");
+        function showMenu(){
+            $("#MainMenu").css("-webkit-clip-path","polygon(0 0,100% 0,100% 100%,0% 100%)");
+            $("#MenuIcon").animate({right:'-100'},300);
+        }
+        setTimeout(showMenu,100);
+   });
+
+    $("#close").click(function(){
+            $("#MainMenu").css("-webkit-clip-path","polygon(0 0,0% 0,100% 100%,0% 100%)");
+            function hideMenu(){
+                    $("#MainMenu").css("left","-300px");
+                $("#MenuIcon").animate({right:'50'},300);
+            }
+        setTimeout(hideMenu,300);
+
+        function originalLayout(){
+            $("#MainMenu").css("-webkit-clip-path","polygon(0 0,100% 0,0% 100%,0% 100%)");
+        }
+        setTimeout(originalLayout,600);
+    });
+});
+ </script>
+</body>
+</html>
